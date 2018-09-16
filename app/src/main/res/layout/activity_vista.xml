@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VistaActivity">
+
+    <RelativeLayout
+        android:id="@+id/encabezado"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+
+        android:background="@drawable/ema">
+    <TextView
+        android:id="@+id/textfondo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emma Charlotte  Watson"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:layout_alignParentBottom="true"
+        />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textfondo"
+        android:text="Actriz, Modelo, Filántropa"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+       />
+
+    <LinearLayout
+        android:id="@+id/barras"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cel"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+        <com.luseen.autolinklibrary.AutoLinkTextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:autoLink="phone"
+            android:text="992245852"/>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work"
+            android:layout_below="@+id/text2"
+            />
+        </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/barras1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sobre"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.luseen.autolinklibrary.AutoLinkTextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:autoLink="email"
+                android:textColorLink="@color/black"
+                android:text="ema.watson@gmail.com"/>
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Persona"
+                android:layout_below="@+id/text4"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/barras2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/global"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.luseen.autolinklibrary.AutoLinkTextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:autoLink="web"
+                android:textColorLink="@color/black"
+                android:text="www.ema.com"/>
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Website"
+                android:layout_below="@+id/text6"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
